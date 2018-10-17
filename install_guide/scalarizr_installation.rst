@@ -183,15 +183,16 @@ Now that we have a local package, we need to create a link between this package 
   Example scalr-server.rb config snippet to enable your repo:
 
   app[:configuration] = {
-  "scalr" => {
-    "scalarizr_update" => {
-      "mode" => "solo",
-      "default_repo" => "TestRepo",
-      "repos" => {
-        "TestRepo" => {
-          "rpm_repo_url" => "http://111.111.111.111/repos/rpm/TestRepo/rhel/$releasever/$basearch",
-          "deb_repo_url" => "http://111.111.111.111/repos/apt-plain/TestRepo /",
-          "win_repo_url" => "http://111.111.111.111/repos/win/TestRepo"
+    "scalr" => {
+      "scalarizr_update" => {
+        "mode" => "solo",
+        "default_repo" => "TestRepo",
+        "repos" => {
+          "TestRepo" => {
+            "deb_repo_url" => "http://111.111.111.111/repos/apt-plain/TestRepo /",
+            "rpm_repo_url" => "http://111.111.111.111/repos/rpm/TestRepo/rhel/$releasever/$basearch",
+            "suse_repo_url" => "http://111.111.111.111/repos/rpm/TestRepo/suse/$releasever/$basearch",
+            "win_repo_url" => "http://111.111.111.111/repos/win/TestRepo"
           }
         }
       }
