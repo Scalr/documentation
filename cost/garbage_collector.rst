@@ -14,7 +14,7 @@ Using the Garbage Collector
 
 The Garbage Collector can be accessed by going to the |Environment| scope, clicking on the main Scalr menu |MENU_ENV| and down to Garbage Collector.
 
-The Garbage Collection page will show the Cleanup Queue with queue entry details.  Once they have become orphaned, relevant entries will be listed and can be deleted in the Cleanup Queue.
+The Garbage Collection page will show the Cleanup Queue with queue entry details.  Once they have become orphaned, relevant entries will be listed and can be manually deleted from the Cleanup Queue.
 
 .. image:: images/garbage.png
    :scale: 80%
