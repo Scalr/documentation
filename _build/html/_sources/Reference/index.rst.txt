@@ -62,6 +62,7 @@ Ubuntu                                      14.04 - 18.04 LTS
 Debian                                      6.x - 7.x
 RHEL / CentOS                               5.x - 7.x
 Windows Server                              2008 R2, 2012(all), and 2016
+Suse Linux Enterprise Server                11.3, 11.4, 12.1
 ========================================    ================================
 
 .. supported-os-end
