@@ -163,7 +163,7 @@ First you need enable access to Azure and obtain the required access keys.
 .. image:: images/Azure-creds.png
    :scale: 70%
 
-Add the tenant name to your credentials if you have it available, and then click **continue** at the bottom of the dialogue box.  You will be redirected to authenticate in the Azure Portal.  Complete authentication by following the on-screen instructions.
+You must add the tenant name to your credentials if you have one or the authentication in Azure will not work. Click **continue** at the bottom of the dialogue box.  You will be redirected to authenticate in the Azure Portal.  Complete authentication by following the on-screen instructions.
 
 20. After authentication you will be once again redirected back to Scalr.  Then choose your Subscription, and hit Save.  An example fully configured Cloud Credential object for Azure will look similar to the following:
 
