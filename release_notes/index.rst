@@ -13,21 +13,8 @@ Scalr Release Notes
 
 Please find the Scalr Server full list of release notes here: |release_notes| |NEWWIN|. In the lists below you will find some highlighted features and corresponding docs per release.
 
-Scalarizr Release Notes
------------------------
-
-.. |szr_release_notes| raw:: html
-
-    <a href="http://update.scalr.net/" target="_blank">Scalarizr Release Notes</a>
-
-
-Please find the Scalarizr release notes here: |szr_release_notes| |NEWWIN|.
-
-Docs Links
-----------
-
-7.12.0
-^^^^^^
+7.12.0 Links
+^^^^^^^^^^^^
 
 * Approvals: https://docs.scalr.com/en/staging/sec_comp/approvals.html
 * Farm Level Lights Out: http://docs.scalr.com/en/latest/farms/launch.html#allowed-hours
@@ -41,3 +28,13 @@ Docs Links
 * Farm Template Storage (optional mountpoints): http://docs.scalr.com/en/latest/service_catalog/advanced_farm_templates.html#storage-configuration
 * UI default for OS Username (see bottom): http://docs.scalr.com/en/latest/gvs/index.html#scalr-ui-default-global-variables
 * GCP Billing: http://docs.scalr.com/en/latest/clouds/connecting_gcp.html#enable-billing
+
+Scalarizr Release Notes
+-----------------------
+
+.. |szr_release_notes| raw:: html
+
+    <a href="http://update.scalr.net/" target="_blank">Scalarizr Release Notes</a>
+
+
+Please find the Scalarizr release notes here: |szr_release_notes| |NEWWIN|.
