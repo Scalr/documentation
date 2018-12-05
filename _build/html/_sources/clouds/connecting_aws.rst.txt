@@ -69,7 +69,7 @@ If you choose to use the "public" or "local" option then you need to login to yo
 After adding this entry you must re-configure scalr by running ``sudo scalr-server-ctl reconfigure``.
 
 Configure Detailed Billing
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 
 Scalr supports detailed billing when using AWS. Detailed billing will give you more details than just showing the total price for compute.
 

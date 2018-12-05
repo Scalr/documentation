@@ -190,6 +190,15 @@ The Profile menu also gives access to some security and UI related features.
                   you will be taken back to you |SCALR| scope session.
 ================= ======
 
+Two-Factor Authentication
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. |google_auth| raw:: html
+
+   <a href="https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DiOS&hl=en" target="_blank">Google Authenticator</a>
+
+To enable two-factor authentication for your user, you can do so by navigating to the Profile Menu and clicking on Security. Once in the Security page, click "Enabled" for the two-factor authentication and following the instructions. Learn more about Google two-factor authentication here: |google_auth| |NEWWIN|.
+
 |ENVIRONMENTS| Menu
 -------------------
 

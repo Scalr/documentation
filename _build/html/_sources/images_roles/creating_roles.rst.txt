@@ -130,6 +130,8 @@ At a minimum, this will ensure the server is added to the correct Organization, 
 .. image:: /images_roles/images/role_ansible_job.png
    :scale: 70%
 
+.. warning :: Please note! You must click "Prompt on Launch" on all fields in the Ansible Tower Template for Scalr to import the Job Template.
+
 .. ansible_roles_end
 
 .. _bootstrap_chef:

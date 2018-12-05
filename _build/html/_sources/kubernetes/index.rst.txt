@@ -120,8 +120,6 @@ Scalr supports the following authorization for native Kubernetes clusters:
 
 * Basic: ``username`` + ``password`` + ``cluster_ca_cert`` - basic authorization should be enabled in order for this method to work.
 
-**Future Release:**
-
 * x509 client certs: ``client_key`` + ``client_cert`` + ``cluster_cert`` - ``Enable obsolete authorization``.
 
 Depending on the type of authorization kube-config will contain either username + pass or client x509 certs.

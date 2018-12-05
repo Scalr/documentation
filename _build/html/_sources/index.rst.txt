@@ -147,6 +147,7 @@ Scalr Documentation Version 2 Preview!
    :caption: Release Notes
 
    release_notes/index
+   release_notes/announcements
    release_notes/labs
 
 .. toctree::

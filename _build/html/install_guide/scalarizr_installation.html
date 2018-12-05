@@ -24,8 +24,7 @@
 
   
 
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -216,10 +215,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../clouds/connecting_aws.html#configure-virtual-private-cloud-vpc">Configure Virtual Private Cloud (VPC)</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#configure-instance-connection-policy">Configure Instance Connection Policy</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../clouds/connecting_aws.html#configure-detailed-billing">Configure Detailed Billing</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#configure-instance-connection-policy">Configure Instance Connection Policy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#configure-detailed-billing">Configure Detailed Billing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#configuring-your-aws-iam-user">Configuring your AWS IAM User</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#adding-aws-credentials-to-scalr">Adding AWS Credentials to Scalr</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#validating-the-connection-to-aws">Validating the Connection to AWS</a></li>
@@ -285,7 +282,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#main-menu">Main Menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#bookmarks-bar">Bookmarks Bar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#profile-menu">Profile Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#profile-menu">Profile Menu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../navigating/index.html#two-factor-authentication">Two-Factor Authentication</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#environments-menu">Environments Menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#list-views">List Views</a></li>
 </ul>
@@ -772,8 +772,16 @@
 <p class="caption"><span class="caption-text">Release Notes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../release_notes/index.html">Release Notes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../release_notes/index.html#scalr-release-notes">Scalr Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../release_notes/index.html#scalr-release-notes">Scalr Release Notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release_notes/index.html#links">7.12.0 Links</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../release_notes/index.html#scalarizr-release-notes">Scalarizr Release Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../release_notes/announcements.html">Announcements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../release_notes/announcements.html#ubuntu-18-04-support">Ubuntu 18.04 Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../release_notes/announcements.html#ubuntu-12-04-support">Ubuntu 12.04 Support</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../release_notes/labs.html">Scalr Labs</a></li>
@@ -1008,9 +1016,6 @@
 </tr>
 <tr class="row-odd"><td>Windows Server</td>
 <td>2008 R2, 2012(all), and 2016</td>
-</tr>
-<tr class="row-even"><td>Suse Linux Enterprise Server</td>
-<td>11.3, 11.4, 12.1</td>
 </tr>
 </tbody>
 </table>
@@ -1273,7 +1278,6 @@ app<span class="o">[</span>:configuration<span class="o">]</span> <span class="o
       <span class="s2">&quot;testrepo&quot;</span> <span class="o">=</span>&gt; <span class="o">{</span>
         <span class="s2">&quot;rpm_repo_url&quot;</span> <span class="o">=</span>&gt; <span class="s2">&quot;http://111.111.111.111/repos/rpm/testrepo/rhel/</span><span class="nv">$releasever</span><span class="s2">/</span><span class="nv">$basearch</span><span class="s2">&quot;</span>,
         <span class="s2">&quot;deb_repo_url&quot;</span> <span class="o">=</span>&gt; <span class="s2">&quot;http://111.111.111.111/repos/apt-plain/testrepo /&quot;</span>,
-        <span class="s2">&quot;suse_repo_url&quot;</span> <span class="o">=</span>&gt; <span class="s2">&quot;http://111.111.111.111/repos/rpm/TestRepo/suse/</span><span class="nv">$releasever</span><span class="s2">/</span><span class="nv">$basearch</span><span class="s2">&quot;</span>,
         <span class="s2">&quot;win_repo_url&quot;</span> <span class="o">=</span>&gt; <span class="s2">&quot;http://111.111.111.111/repos/win/testrepo&quot;</span>
         <span class="o">}</span>
       <span class="o">}</span>
@@ -1395,10 +1399,7 @@ Version <span class="m">5</span>.5.5 has been deleted
 
   
 
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
 
   <script type="text/javascript">
       jQuery(function () {

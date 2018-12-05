@@ -24,8 +24,7 @@
 
   
 
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -216,10 +215,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../clouds/connecting_aws.html#configure-virtual-private-cloud-vpc">Configure Virtual Private Cloud (VPC)</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#configure-instance-connection-policy">Configure Instance Connection Policy</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../clouds/connecting_aws.html#configure-detailed-billing">Configure Detailed Billing</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#configure-instance-connection-policy">Configure Instance Connection Policy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#configure-detailed-billing">Configure Detailed Billing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#configuring-your-aws-iam-user">Configuring your AWS IAM User</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#adding-aws-credentials-to-scalr">Adding AWS Credentials to Scalr</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../clouds/connecting_aws.html#validating-the-connection-to-aws">Validating the Connection to AWS</a></li>
@@ -285,7 +282,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#main-menu">Main Menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#bookmarks-bar">Bookmarks Bar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#profile-menu">Profile Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#profile-menu">Profile Menu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../navigating/index.html#two-factor-authentication">Two-Factor Authentication</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#environments-menu">Environments Menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../navigating/index.html#list-views">List Views</a></li>
 </ul>
@@ -772,8 +772,16 @@
 <p class="caption"><span class="caption-text">Release Notes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../release_notes/index.html">Release Notes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../release_notes/index.html#scalr-release-notes">Scalr Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../release_notes/index.html#scalr-release-notes">Scalr Release Notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release_notes/index.html#links">7.12.0 Links</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../release_notes/index.html#scalarizr-release-notes">Scalarizr Release Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../release_notes/announcements.html">Announcements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../release_notes/announcements.html#ubuntu-18-04-support">Ubuntu 18.04 Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../release_notes/announcements.html#ubuntu-12-04-support">Ubuntu 12.04 Support</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../release_notes/labs.html">Scalr Labs</a></li>
@@ -1015,6 +1023,14 @@
 <a class="reference internal image-reference" href="../_images/storage_aws.png"><img alt="../_images/storage_aws.png" src="../_images/storage_aws.png" style="width: 372.0px; height: 487.0px;" /></a>
 <p>All storage volumes for AWS can be managed in the EBS Volumes page. Go to the main Scalr menu dropdown on the top left <a class="reference internal" href="../_images/menu_env.png"><img alt="MENU_ENV" src="../_images/menu_env.png" style="width: 45.0px; height: 31.5px;" /></a> and click on AWS, then EC2, and EBS volumes:</p>
 <a class="reference internal image-reference" href="../_images/storage_aws2.png"><img alt="../_images/storage_aws2.png" src="../_images/storage_aws2.png" style="width: 925.0px; height: 439.0px;" /></a>
+<p>From the screen above you can do the following:</p>
+<ul class="simple">
+<li>Create and attach storage</li>
+<li>Change existing volume settings: size, type, tags</li>
+<li>Check Cloud Watch statistics</li>
+<li>Snapshot the selected volume</li>
+<li>Setup automatic snapshots for a volume</li>
+</ul>
 </div>
 <div class="section" id="google-cloud-platform-storage-configuration">
 <h2>Google Cloud Platform Storage Configuration<a class="headerlink" href="#google-cloud-platform-storage-configuration" title="Permalink to this headline">¶</a></h2>
@@ -1024,6 +1040,10 @@
 <p><a class="reference internal" href="../_images/storage_gcp_1.png"><img alt="GCP1" src="../_images/storage_gcp_1.png" style="width: 457.0px; height: 487.0px;" /></a> <a class="reference internal" href="../_images/storage_gcp_2.png"><img alt="GCP2" src="../_images/storage_gcp_2.png" style="width: 480.5px; height: 433.5px;" /></a></p>
 <p>All storage volumes for GCP can be managed in the GCP Persistent Disk page. Go to the main Scalr menu dropdown on the top left <a class="reference internal" href="../_images/menu_env.png"><img alt="MENU_ENV" src="../_images/menu_env.png" style="width: 45.0px; height: 31.5px;" /></a>, click on Google Cloud Platform, then Compute Engine, and Persistent Disks:</p>
 <a class="reference internal image-reference" href="../_images/storage_gcp_3.png"><img alt="../_images/storage_gcp_3.png" src="../_images/storage_gcp_3.png" style="width: 814.0px; height: 447.5px;" /></a>
+<p>From the screen above you can do the following:</p>
+<ul class="simple">
+<li>Change the size of the exists disks</li>
+</ul>
 </div>
 <div class="section" id="azure-storage-configuration">
 <h2>Azure Storage Configuration<a class="headerlink" href="#azure-storage-configuration" title="Permalink to this headline">¶</a></h2>
@@ -1031,6 +1051,11 @@
 <a class="reference internal image-reference" href="../_images/storage_azure.png"><img alt="../_images/storage_azure.png" src="../_images/storage_azure.png" style="width: 461.0px; height: 487.0px;" /></a>
 <p>All storage volumes for Azure can be managed in the Azure Managed Disk page. Go to the main Scalr menu dropdown on the top left <a class="reference internal" href="../_images/menu_env.png"><img alt="MENU_ENV" src="../_images/menu_env.png" style="width: 45.0px; height: 31.5px;" /></a>, click on Azure and Managed Disks:</p>
 <a class="reference internal image-reference" href="../_images/storage_azure2.png"><img alt="../_images/storage_azure2.png" src="../_images/storage_azure2.png" style="width: 928.5px; height: 196.5px;" /></a>
+<p>From the screen above you can do the following:</p>
+<ul class="simple">
+<li>Create a new Managed Disk</li>
+<li>Update the size and type of existing disks</li>
+</ul>
 </div>
 <div class="section" id="openstack-storage-configuration">
 <h2>OpenStack Storage Configuration<a class="headerlink" href="#openstack-storage-configuration" title="Permalink to this headline">¶</a></h2>
@@ -1038,6 +1063,13 @@
 <a class="reference internal image-reference" href="../_images/storage_openstack.png"><img alt="../_images/storage_openstack.png" src="../_images/storage_openstack.png" style="width: 459.5px; height: 487.0px;" /></a>
 <p>All storage volumes for Openstack can be managed in the Openstack Volumes page. Go to the main Scalr menu dropdown on the top left <a class="reference internal" href="../_images/menu_env.png"><img alt="MENU_ENV" src="../_images/menu_env.png" style="width: 45.0px; height: 31.5px;" /></a>, click on Openstack and then Volumes:</p>
 <a class="reference internal image-reference" href="../_images/storage_openstack2.png"><img alt="../_images/storage_openstack2.png" src="../_images/storage_openstack2.png" style="width: 882.0px; height: 438.5px;" /></a>
+<p>From the screen above you can do the following:</p>
+<ul class="simple">
+<li>Create and attach storage</li>
+<li>Change existing volume settings: size, type, tags</li>
+<li>Snapshot the selected volume</li>
+<li>Setup automatic snapshots for a volume</li>
+</ul>
 </div>
 <div class="section" id="vmware-storage-configuration">
 <h2>VMWare Storage Configuration<a class="headerlink" href="#vmware-storage-configuration" title="Permalink to this headline">¶</a></h2>
@@ -1064,6 +1096,10 @@
 <a class="reference internal image-reference" href="../_images/storage_vmware.png"><img alt="../_images/storage_vmware.png" src="../_images/storage_vmware.png" style="width: 489.0px; height: 470.0px;" /></a>
 <p>All storage volumes for VMware can be managed in the VMware Vitrual Disks page. Go to the main Scalr menu dropdown on the top left <a class="reference internal" href="../_images/menu_env.png"><img alt="MENU_ENV" src="../_images/menu_env.png" style="width: 45.0px; height: 31.5px;" /></a>, click on VMware and then Virtual Disks:</p>
 <a class="reference internal image-reference" href="../_images/storage_vmware2.png"><img alt="../_images/storage_vmware2.png" src="../_images/storage_vmware2.png" style="width: 924.0px; height: 439.0px;" /></a>
+<p>From the screen above you can do the following:</p>
+<ul class="simple">
+<li>Create and attach storage</li>
+</ul>
 </div>
 </div>
 
@@ -1123,10 +1159,7 @@
 
   
 
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
 
   <script type="text/javascript">
       jQuery(function () {

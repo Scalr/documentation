@@ -191,7 +191,6 @@ Now that we have a local package, we need to create a link between this package 
         "testrepo" => {
           "rpm_repo_url" => "http://111.111.111.111/repos/rpm/testrepo/rhel/$releasever/$basearch",
           "deb_repo_url" => "http://111.111.111.111/repos/apt-plain/testrepo /",
-          "suse_repo_url" => "http://111.111.111.111/repos/rpm/TestRepo/suse/$releasever/$basearch",
           "win_repo_url" => "http://111.111.111.111/repos/win/testrepo"
           }
         }

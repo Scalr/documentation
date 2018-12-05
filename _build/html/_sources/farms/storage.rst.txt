@@ -75,6 +75,14 @@ All storage volumes for AWS can be managed in the EBS Volumes page. Go to the ma
 .. image:: images/storage_aws2.png
    :scale: 50%
 
+From the screen above you can do the following:
+
+* Create and attach storage
+* Change existing volume settings: size, type, tags
+* Check Cloud Watch statistics
+* Snapshot the selected volume
+* Setup automatic snapshots for a volume
+
 Google Cloud Platform Storage Configuration
 -------------------------------------------
 
@@ -96,6 +104,10 @@ All storage volumes for GCP can be managed in the GCP Persistent Disk page. Go t
 .. image:: images/storage_gcp_3.png
    :scale: 50%
 
+From the screen above you can do the following:
+
+* Change the size of the exists disks
+
 Azure Storage Configuration
 ---------------------------
 
@@ -108,6 +120,12 @@ All storage volumes for Azure can be managed in the Azure Managed Disk page. Go 
 
 .. image:: images/storage_azure2.png
    :scale: 50%
+
+From the screen above you can do the following:
+
+* Create a new Managed Disk
+* Update the size and type of existing disks
+
 
 OpenStack Storage Configuration
 -------------------------------
@@ -122,6 +140,12 @@ All storage volumes for Openstack can be managed in the Openstack Volumes page. 
 .. image:: images/storage_openstack2.png
    :scale: 50%
 
+From the screen above you can do the following:
+
+* Create and attach storage
+* Change existing volume settings: size, type, tags
+* Snapshot the selected volume
+* Setup automatic snapshots for a volume
 
 VMWare Storage Configuration
 ----------------------------
@@ -143,3 +167,7 @@ All storage volumes for VMware can be managed in the VMware Vitrual Disks page. 
 
 .. image:: images/storage_vmware2.png
    :scale: 50%
+
+From the screen above you can do the following:
+
+* Create and attach storage 
