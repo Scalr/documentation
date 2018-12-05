@@ -39,7 +39,7 @@ Supported Operating Systems:
 * RedHat Enterprise Linux 6.x or 7.x
 * Centos Linux 6.x or 7.x
 * Debian 7.x or 8.x
-* Ubuntu 14.04, 16.04, or 18.04
+* Ubuntu 14.04, 16.04, 18.04
 
 .. _network_reqs:
 
