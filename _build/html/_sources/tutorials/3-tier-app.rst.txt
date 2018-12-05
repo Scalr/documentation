@@ -224,5 +224,3 @@ Parameterized deployments are useful for use cases such as deploying a specific 
 
 .. image:: images/Application-Screenshot-2.jpg
   :scale: 90%
-
-Here is the zip file :download:`files.zip`
