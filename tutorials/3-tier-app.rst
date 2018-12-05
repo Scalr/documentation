@@ -18,7 +18,7 @@ Script Creation
 ^^^^^^^^^^^^^^^
 Create the following scripts in Scalr:
 
- (Attached in zip)
+ (Script text files are available here :download:`files.zip`)
 
 - Webapp Deploy
 - Webapp Config
@@ -52,6 +52,8 @@ Farm Creation:
 
 Farm Role Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^
+* Please leave any settings not mentioned below as default.  The steps below should cover everything needed for this tutorial.
+
 Select and configure the WebApp farm role:
 -------------------------------------------
 * Select SCALING and change the autoscaling setting to Min Instances = 2, Max Instances = 5
@@ -200,7 +202,6 @@ Testing the Application
 
 .. image:: images/Screenshot-9.jpg
    :scale: 90%
-|BR|
 
 .. image:: images/Application-Screenshot.jpg
   :scale: 80%
