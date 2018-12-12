@@ -88,3 +88,13 @@ Validating the Connection to VMWare
 -----------------------------------
 
 You can now proceed to adding these credentials to your |ENVIRONMENTS|.
+
+VMware Activities that Impact Scalr
+------------------------------------
+
+If the following events take place directly in VMware, Scalr could be negatively impacted:
+
+* UnregisterVM_Task of Virtual Machines and Templates that are used by Scalr. Registering them back into Scalr will not resolve the issue as they servers and/or images will have a different UUID.
+* Scalr will give the following error if DRS/SRDS is disabled for Compute Resources/Storage Pods on running Farms: "Unable to launch instance: Object Datastore with managed object reference: was not found." Reenabling that functionality or editing the Farm fixes the issue. A warmup of VMware cache will be required to get everything fully functional.
+* Relocating a server to a linked vCenter that is not configured in Scalr will cause the server to go into a "Missing" state. Scalr will not terminate or shutdown the server, it just won't be able to manage the server.
+* Deleting a scalr-meta Custom Attribute from a single server ends up removing all of the scalr-meta attributes from ALL servers in that vCenter. This is a function of vCenter, Scalr never deletes Custom Attributes.
