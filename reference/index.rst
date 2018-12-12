@@ -78,6 +78,7 @@ Port    Protocol       Direction                                  Usage
 =====   ============   =========================================  =================================
 80       TCP           Cloud Instance > Scalr Server              Scalarizr Agent
 443      TCP           Cloud Instance > Scalr Server              Scalarizr Agent
+3006     TCP           Scalr Server Nodes > DB Nodes              Access to DB's
 5671     TCP           Cloud Instance > Scalr Server              Scalarizr Agent (rabbitmq)
 6275     TCP           Between Scalr Server Nodes (excluding DB)  RabbitMQ
 6276     TCP           Between Scalr Server Nodes (excluding DB)  RabbitMQ
@@ -85,6 +86,7 @@ Port    Protocol       Direction                                  Usage
 8008     TCP           Scalr Server > Cloud Instance              Scalarizr Agent (update service)
 8010     TCP           Scalr Server > Cloud Instance              Scalarizr Agent (API)
 8013     TCP           Scalr Server > Cloud Instance              Scalarizr Agent (control)
+11211    TCP           Between the server running Memcache        Access to Memcache
 15671    TCP           Between Scalr Server Nodes (excluding DB)  RabbitMQ
 =====   ============   =========================================  =================================
 

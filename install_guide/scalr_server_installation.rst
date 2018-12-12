@@ -40,7 +40,7 @@ Please create the /etc/scalr-server directory on the remaining servers and copy 
 
 .. code-block:: shell
 
-   ##Past the scalr-server-secrets.json in the following location on each server:##
+   ##Paste the scalr-server-secrets.json in the following location on each server:##
    vi /etc/scalr-server/scalr-server-secrets.json
 
 Create the scalr-server.rb and scalr-server-local.rb configuration file on each server:
@@ -65,6 +65,7 @@ At this point there should be four files in the /etc/scalr-server directory on e
    user@scalr:/etc/scalr-server# ls
    license.json  scalr-server-local.rb  scalr-server.rb  scalr-server-secrets.json
 
+.. warning:: The scalr-server.rb, scalr-server-secrets.json and license.json MUST be identical on all servers before running reconfigure
 
 Reconfigure Scalr on the DB node:
 
