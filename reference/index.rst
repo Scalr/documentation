@@ -86,7 +86,7 @@ Port    Protocol       Direction                                  Usage
 8008     TCP           Scalr Server > Cloud Instance              Scalarizr Agent (update service)
 8010     TCP           Scalr Server > Cloud Instance              Scalarizr Agent (API)
 8013     TCP           Scalr Server > Cloud Instance              Scalarizr Agent (control)
-11211    TCP           Between the server running Memcache        Access to Memcache
+11211    TCP           Between the servers running Memcache       Access to Memcache
 15671    TCP           Between Scalr Server Nodes (excluding DB)  RabbitMQ
 =====   ============   =========================================  =================================
 
